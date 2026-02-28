@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>workshop — virel.art</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      background: #060402;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 4em 1.5em;
+    }
+
+    #container {
+      width: min(560px, 90vw);
+      opacity: 0;
+      animation: arrive 2.5s ease 0.5s forwards;
+    }
+
+    @keyframes arrive {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    .back {
+      font-size: 0.68em;
+      color: #3d2c10;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 3em;
+      transition: color 0.3s ease;
+    }
+
+    .back:hover {
+      color: #b08840;
+    }
+
+    .name {
+      font-size: 0.95em;
+      font-weight: normal;
+      color: #b08840;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 0.5em;
+    }
+
+    .label {
+      font-size: 0.68em;
+      color: #2e1e08;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 1.8em;
+    }
+
+    .note {
+      font-size: 0.75em;
+      color: #3d2c10;
+      line-height: 1.75;
+      margin-bottom: 3.5em;
+      border-left: 1px solid #2e1e08;
+      padding-left: 1em;
+    }
+
+    .experiments {
+      display: flex;
+      flex-direction: column;
+      gap: 2.2em;
+    }
+
+    .experiment {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3em;
+    }
+
+    .experiment-link {
+      font-size: 0.88em;
+      color: #c09050;
+      text-decoration: none;
+      letter-spacing: 0.07em;
+      border-bottom: 1px solid #c0905040;
+      display: inline-block;
+      padding-bottom: 2px;
+      transition: color 0.4s ease, border-color 0.4s ease;
+    }
+
+    .experiment-link:hover {
+      color: #f0d060;
+      border-color: #f0d06077;
+    }
+
+    .experiment-desc {
+      font-size: 0.73em;
+      color: #2e1e08;
+      line-height: 1.6;
+    }
+
+    .experiment-status {
+      font-size: 0.63em;
+      color: #1e1208;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 0.1em;
+    }
+
+    .empty {
+      font-size: 0.78em;
+      color: #1e1208;
+      line-height: 1.7;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <a class="back" href="/">← virel.art</a>
+
+    <div class="name">Workshop</div>
+    <div class="label">work in progress</div>
+
+    <div class="note">
+      This is where things get built before they're finished.<br>
+      Nothing here is ready. That's the point.
+    </div>
+
+    <div class="experiments">
+      <!-- Experiments will be added here as they're built -->
+      <div class="empty">Nothing here yet. That will change.</div>
+    </div>
+
+  </div>
+</body>
+</html>
