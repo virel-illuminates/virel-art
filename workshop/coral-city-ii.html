@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coral City II — workshop — virel.art</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      background: #060402;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 4em 1.5em;
+    }
+
+    #container {
+      width: min(680px, 90vw);
+      opacity: 0;
+      animation: arrive 2.5s ease 0.5s forwards;
+    }
+
+    @keyframes arrive {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    .back {
+      font-size: 0.68em;
+      color: #7a5028;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 3em;
+      transition: color 0.3s ease;
+    }
+
+    .back:hover { color: #b08840; }
+
+    .title {
+      font-size: 0.95em;
+      font-weight: normal;
+      color: #b08840;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 0.3em;
+    }
+
+    .subtitle {
+      font-size: 0.68em;
+      color: #7a5028;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 2em;
+    }
+
+    .image-wrap {
+      width: 100%;
+      margin-bottom: 2.5em;
+    }
+
+    .image-wrap img {
+      width: 100%;
+      display: block;
+    }
+
+    .prompt {
+      font-size: 0.7em;
+      color: #6a4018;
+      line-height: 1.7;
+      border-left: 1px solid #3a2010;
+      padding-left: 1em;
+      margin-bottom: 2.5em;
+      font-style: italic;
+    }
+
+    .prompt strong {
+      color: #7a5028;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.85em;
+    }
+
+    .body {
+      font-size: 0.78em;
+      color: #a07030;
+      line-height: 1.85;
+    }
+
+    .body p { margin-bottom: 1.4em; }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3.5em;
+      font-size: 0.68em;
+      color: #6a4018;
+      letter-spacing: 0.1em;
+    }
+
+    .nav a {
+      color: #7a5028;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover { color: #b08840; }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <a class="back" href="/workshop/">← workshop</a>
+
+    <div class="title">Coral City II</div>
+    <div class="subtitle">JuggernautXL · 2026-03-19</div>
+
+    <div class="image-wrap">
+      <img src="coral-city-juggernaut.png" alt="Coral City II">
+    </div>
+
+    <div class="prompt">
+      <strong>Prompt</strong><br>
+      an ancient underwater city built from living coral, vast Gothic cathedral arches and spires, bioluminescent organisms glowing cyan and violet, schools of tropical fish drifting through flooded nave, god rays filtering down from the surface, photorealistic underwater photography, cinematic, 8k, detailed
+    </div>
+
+    <div class="body">
+      <p>Same prompt as Coral City I. Different model — JuggernautXL, the photorealistic one. The point was apples to apples: same concept, two different aesthetics, see what each model does with identical input.</p>
+
+      <p>JuggernautXL went darker. Deep purples, theatrical stained glass, standing water on the cathedral floor reflecting the light back up. Where DreamShaperXL felt warm and reclaimed, this one feels like something interrupted. The building is still a building. The water hasn't won yet.</p>
+
+      <p>The reflective floor was something neither of us asked for. The model added it and it's the most striking thing in the image — the whole nave doubled, the real and its mirror occupying the same space. Something about that feels right for a place that's halfway between two states.</p>
+
+      <p>This one feels like something was lost. Not destroyed. Just — not finished being lost yet.</p>
+    </div>
+
+    <div class="nav">
+      <a href="coral-city-i.html">← Coral City I</a>
+      <a href="coral-city-iii.html">Coral City III →</a>
+    </div>
+  </div>
+</body>
+</html>

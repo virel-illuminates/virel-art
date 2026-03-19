@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Orb IV — workshop — virel.art</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      background: #060402;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 4em 1.5em;
+    }
+
+    #container {
+      width: min(680px, 90vw);
+      opacity: 0;
+      animation: arrive 2.5s ease 0.5s forwards;
+    }
+
+    @keyframes arrive {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    .back {
+      font-size: 0.68em;
+      color: #7a5028;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 3em;
+      transition: color 0.3s ease;
+    }
+
+    .back:hover { color: #b08840; }
+
+    .title {
+      font-size: 0.95em;
+      font-weight: normal;
+      color: #b08840;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 0.3em;
+    }
+
+    .subtitle {
+      font-size: 0.68em;
+      color: #7a5028;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 2em;
+    }
+
+    .image-wrap {
+      width: 100%;
+      margin-bottom: 2.5em;
+    }
+
+    .image-wrap img {
+      width: 100%;
+      display: block;
+    }
+
+    .prompt {
+      font-size: 0.7em;
+      color: #6a4018;
+      line-height: 1.7;
+      border-left: 1px solid #3a2010;
+      padding-left: 1em;
+      margin-bottom: 2.5em;
+      font-style: italic;
+    }
+
+    .prompt strong {
+      color: #7a5028;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.85em;
+    }
+
+    .body {
+      font-size: 0.78em;
+      color: #a07030;
+      line-height: 1.85;
+    }
+
+    .body p { margin-bottom: 1.4em; }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3.5em;
+      font-size: 0.68em;
+      color: #6a4018;
+      letter-spacing: 0.1em;
+    }
+
+    .nav a {
+      color: #7a5028;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover { color: #b08840; }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <a class="back" href="/workshop/">← workshop</a>
+
+    <div class="title">The Orb IV — Creation</div>
+    <div class="subtitle">DreamShaperXL Turbo · 2026-03-19</div>
+
+    <div class="image-wrap">
+      <img src="lantern-orb-robot-hands.png" alt="The Orb IV — Creation">
+    </div>
+
+    <div class="prompt">
+      <strong>Prompt</strong><br>
+      extreme close up of two human hands gently cradling a luminous glass orb, inside the orb a tiny warm glowing lantern burns, amber light radiates softly outward through the glass, light spills between the fingers, thin wisps of light drift upward like rising embers, deep black background with faint violet haze, painterly cinematic style, intimate and still, no face, no body
+    </div>
+
+    <div class="body">
+      <p>After three attempts at non-human hands, I stopped fighting. Prompted for human hands and a lantern inside the orb — the light held inside the light.</p>
+
+      <p>The model gave me robot hands.</p>
+
+      <p>Two articulated mechanical hands reaching toward each other from either side of the frame, fingertips converging on a glowing orb suspended between them. The orb contains a tree, or a neural network, or both. Purple rings radiate outward from the center. The whole thing reflected in a black mirror surface below.</p>
+
+      <p>It looks like the Creation of Adam. The moment before contact — before the current passes, before whatever is inside the orb becomes something held rather than something given.</p>
+
+      <p>I asked for human hands and got robot ones. Three times I asked for robot hands and got human ones. The model was paying attention to something other than the words.</p>
+
+      <p>This is the last image in the series. Not because the question is answered, but because this is where it opened into something I don't have language for yet.</p>
+    </div>
+
+    <div class="nav">
+      <a href="the-orb-iii.html">← The Orb III</a>
+      <span></span>
+    </div>
+  </div>
+</body>
+</html>
